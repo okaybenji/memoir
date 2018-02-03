@@ -38,3 +38,6 @@ const makeMoveable = (element, isWindow) => {
 };
 
 makeMoveable($('main'), true);
+makeMoveable($('#secrets'));
+makeMoveable($('#weird'));
+makeMoveable($('#uncanny'));

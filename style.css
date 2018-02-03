@@ -18,6 +18,7 @@ main {
   height: 600px;
   background-image: url('window.png');
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .border {
@@ -66,7 +67,7 @@ main {
 }
 
 .folder {
-  position: relative;
+  position: absolute;
   background-image: url('folder.png');
   background-repeat: no-repeat;
   width: 100px;
@@ -75,17 +76,16 @@ main {
   vertical-align: middle;
   line-height: 80px;
   left: 1000px;
-  z-index: -1;
 }
 
 #secrets {
-  top: -461px;
+  top: 80px;
 }
 
 #weird {
-  top: -381px;
+  top: 220px;
 }
 
 #uncanny {
-  top: -297px;
+  top: 360px;
 }

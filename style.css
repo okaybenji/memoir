@@ -39,6 +39,17 @@ main {
   margin-left: 20px;
 }
 
+#taskbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: black 1px solid;
+  height: 18px;
+  padding: 12px;
+}
+
 #gallery {
   display: flex;
   justify-content: space-around;

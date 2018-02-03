@@ -3,15 +3,25 @@
   src: url(pixel.ttf);
 }
 
-main {
-  margin: 0 auto;
-  width: 1024px;
-  height: 768px;
-  background-image: url('bg.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+body {
+  background-image: url('bg.png');
+  image-rendering: pixelated;
   font-family: pixel;
-  font-size: 20px
+  font-size: 20px;
+}
+
+main {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width: 800px;
+  height: 600px;
+  background-image: url('window.png');
+  background-repeat: no-repeat;
+}
+
+.border {
+  border: 1px solid black;
 }
 
 .caption {
@@ -36,44 +46,46 @@ main {
 #gallery img {
   width: 180px;
   height: 120px;
-  image-rendering: pixelated;
 }
 
 #title {
   position: relative;
-  top: 78px;
-  left: 70px;
+  top: 5px;
+  left: 20px;
   color: white;
 }
 
 #content {
-  padding: 0px 14px;
+  padding: 0px 30px;
   position: relative;
-  top: 85px;
-  left: 60px;
-  width: 772px;
-  height: 565px;
-  background-color: rgba(255,255,255,0.5);
+  top: 13px;
+  width: 740px;
+  height: 556px;
   overflow: scroll;
+  line-height: 28px;
+}
+
+.folder {
+  position: relative;
+  background-image: url('folder.png');
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  left: 1000px;
+  z-index: -1;
 }
 
 #secrets {
-  position: relative;
-  top: -561px;
-  left: 910px;
-  color: lightgray;
+  top: -461px;
 }
 
 #weird {
-  position: relative;
-  top: -481px;
-  left: 922px;
-  color: lightgray;
+  top: -381px;
 }
 
 #uncanny {
-  position: relative;
-  top: -397px;
-  left: 910px;
-  color: lightgray;
+  top: -297px;
 }

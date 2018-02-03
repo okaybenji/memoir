@@ -38,6 +38,24 @@ const makeMoveable = (element, isWindow) => {
 };
 
 makeMoveable($('main'), true);
-makeMoveable($('#secrets'));
-makeMoveable($('#weird'));
-makeMoveable($('#uncanny'));
+
+const folders = [$('#secrets'), $('#weird'), $('#uncanny')];
+
+$('body').addEventListener('click', (e) => {
+  // Reset highlight on all elements
+  folders.forEach((f) => {
+    f.classList.remove('highlight');
+  });
+});
+
+folders.forEach((folder) => {
+  makeMoveable(folder);
+
+  folder.addEventListener('click', (e) => {
+    // Enable highlight on this folder
+    // Slight hack to make sure this happens after resetting highlights
+    setTimeout(() => {
+      folder.classList.toggle('highlight');
+    });
+  });
+});

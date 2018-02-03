@@ -78,6 +78,10 @@ main {
   left: 1000px;
 }
 
+.highlight {
+  opacity: .5;
+}
+
 #secrets {
   top: 80px;
 }

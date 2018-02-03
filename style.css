@@ -1,0 +1,79 @@
+@font-face {
+  font-family: pixel;
+  src: url(pixel.ttf);
+}
+
+main {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: pixel;
+  font-size: 20px
+}
+
+.caption {
+  font-size: 14px;
+}
+
+.floatLeft {
+  float: left;
+  margin-right: 20px;
+}
+
+.floatRight {
+  float: right;
+  margin-left: 20px;
+}
+
+#gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+#gallery img {
+  width: 180px;
+  height: 120px;
+  image-rendering: pixelated;
+}
+
+#title {
+  position: relative;
+  top: 78px;
+  left: 70px;
+  color: white;
+}
+
+#content {
+  padding: 0px 14px;
+  position: relative;
+  top: 85px;
+  left: 60px;
+  width: 772px;
+  height: 565px;
+  background-color: rgba(255,255,255,0.5);
+  overflow: scroll;
+}
+
+#secrets {
+  position: relative;
+  top: -561px;
+  left: 910px;
+  color: lightgray;
+}
+
+#weird {
+  position: relative;
+  top: -481px;
+  left: 922px;
+  color: lightgray;
+}
+
+#uncanny {
+  position: relative;
+  top: -397px;
+  left: 910px;
+  color: lightgray;
+}
